@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { X, CheckCircle2, AlertTriangle, Clock, Plus, Trash2, CheckCircle, Circle } from 'lucide-react';
 
-const API = "http://127.0.0.1:5129/api";
+import API from '@/config/api';
 
 export default function TaskModal({ isOpen, onClose, task, onSave }) {
   const [formData, setFormData] = useState({ 

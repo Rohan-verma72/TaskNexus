@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { X, Clock, AlertTriangle } from 'lucide-react';
 
-const API = "http://127.0.0.1:5129/api";
+import API from '@/config/api';
 
 export default function TimeLogModal({ isOpen, onClose, taskId, onSave }) {
   const [hours, setHours] = useState("");

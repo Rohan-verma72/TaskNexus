@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { FolderKanban, Users, ClipboardList, Plus, Search, MoreVertical, Trash2, Edit3, Loader2 } from "lucide-react";
 
-const API = "http://127.0.0.1:5129/api";
+import API from '@/config/api';
 
 export default function Projects() {
   const [projects, setProjects] = useState([]);

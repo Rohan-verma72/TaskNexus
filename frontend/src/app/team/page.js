@@ -4,7 +4,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Users, Shield, UserPlus, Search, MoreHorizontal, Trash2, ShieldCheck, ShieldAlert, Loader2, CheckSquare } from "lucide-react";
 import AssignTaskModal from '@/components/AssignTaskModal';
 
-const API = "http://127.0.0.1:5129/api";
+import API from '@/config/api';
 
 export default function Team() {
   const [users, setUsers] = useState([]);

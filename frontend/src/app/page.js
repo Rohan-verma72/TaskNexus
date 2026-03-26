@@ -9,7 +9,7 @@ import KanbanBoard from '@/components/KanbanBoard';
 import TaskModal from '@/components/TaskModal';
 import TimeLogModal from '@/components/TimeLogModal';
 
-const API = "http://127.0.0.1:5129/api";
+import API from '@/config/api';
 
 export default function Dashboard() {
   const [tasks, setTasks] = useState([]);

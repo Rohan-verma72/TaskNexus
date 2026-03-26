@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import { Plus, CheckCircle2, Circle, Clock, AlertTriangle, User, MoreVertical, ChevronLeft, Layout, Send } from "lucide-react";
 import Link from "next/link";
 
-const API = "http://127.0.0.1:5129/api";
+import API from '@/config/api';
 
 export default function ProjectDetails() {
   const { id } = useParams();
